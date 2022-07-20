@@ -16,3 +16,7 @@ function descendingOrder(a){
   a = a.toString().split('').sort((a, b) => b - a ).toString().replace(/\,/g, '').trim()
   return Number(a)
 }
+
+function squareSum(a){
+  return a.reduce((sum, elem) => sum+=(elem*=elem), 0)
+}
