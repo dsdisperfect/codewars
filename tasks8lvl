@@ -20,3 +20,7 @@ function descendingOrder(a){
 function squareSum(a){
   return a.reduce((sum, elem) => sum+=(elem*=elem), 0)
 }
+
+function maps(x){
+  return x.map(elem => elem*2)
+}
