@@ -24,3 +24,9 @@ function squareSum(a){
 function maps(x){
   return x.map(elem => elem*2)
 }
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  let gpdied = arguments
+  return  Math.floor(Math.sqrt(Array.from(gpdied).map((elem) => elem*=elem).reduce((sum, elem) => sum+=elem, 0)) / 2)
+  
+}
